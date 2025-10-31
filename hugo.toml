@@ -1,3 +1,113 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Bryce on the Pacific Crest Trail'
+theme = 'whiteplain'
+
+# Disqus shortname
+# disqusShortname = "Shortname"
+# google analytics tracking id
+# googleAnalytics = "Toracking ID"
+
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; Copyright 2025 Bryce Derriso"
+
+[params]
+  # whether to use CDN or local file for fontawesome
+  #useCDN = false
+  # whether to include external sharing scripts and icons for twitter, facebook and co.
+  #showShareIcons = false
+  # Date format
+  #dateFormat = "January 2, 2006"
+
+# This is displayer in About page.
+[params.author]
+  name = "Bryce"
+  # Gravatar or Abatar image
+  # gravatar = "Gravatar email or MD5 Hash"
+
+# this is in `/static`, which gets served at the root of the website.
+# It should probably be served from assets? 
+  avatar = "/bryce_zen_garden.jpg"
+
+  instagram = "brycederriso"
+# todo: add these when I'm a PrOfEsSiOnAl
+#  linkedin = "Linkedin username"
+#  github = "Github username"
+#  email = "Your email"
+
+# I'm not on the following websites, so they're commented out.
+#  x = "X username"
+#  twitter = "Twitter username"
+#  facebook = "Facebook username"
+#  googleplus = "Googleplus username"
+#  threads = "Threads username"
+#  tumblr = "Tumblr username"
+#  flickr = "Flickr username"
+#  reddit = "Reddit username"
+#  slideshare = "Slideshare username"
+#  gitlab = "Gitlab username"
+#  bitbucket = "Bitbucket username"
+#  stackoverflow = "Stackoverflow username"
+#  jsfiddle = "Jsfiddle username"
+#  codepen = "Codepen username"
+#  deviantart = "Deviantart username"
+#  behance = "Behance username"
+#  dribbble = "Dribbble username"
+#  wordpress = "Wordpress username"
+#  medium = "Medium username"
+#  foursquare = "Foursquare username"
+#  xing = "Xing username"
+#  quora = "Quora username"
+#  youtube = "YouTube username"
+#  tiktok = "TikTok username"
+#  vimeo = "Vimeo username"
+#  whatsapp = "Whatsapp username"
+#  skype = "Skype username"
+#  snapchat = "Snapchat username"
+#  pinterest = "Pinterest username"
+#  telegram = "Telegram username"
+#  vine = "Vine username"
+
+[[params.author.social]]
+  name = "Custom social link1"
+  iclass = "fa-brands fa-github"
+  url = "https://example.com/whiteplain"
+
+[[params.author.social]]
+  name = "Custom social link2"
+  iclass = "fa-brands fa-google"
+  url = "https://example.com/whiteplain"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Header Menu
+[[menu.main]]
+  name = "Categories"
+  identifier = "categories"
+  url = "/categories/"
+  weight = 1
+[[menu.main]]
+  name = "Tags"
+  identifier = "tags"
+  url = "/tags/"
+  weight = 2
+[[menu.main]]
+  name = "Archives"
+  identifier = "archives"
+  url = "/archives/"
+  weight = 3
+[[menu.main]]
+  name = "About"
+  identifier = "about"
+  url = "/about/"
+  weight = 4
+
+# Footer Menu
+[[menu.footer]]
+  name = "About"
+  weight = 1
+  identifier = "about"
+  url = "/about/"
